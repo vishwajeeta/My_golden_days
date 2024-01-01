@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="posts about their sucessfull days" />
+    <title>My Golden Days</title>
+    <style>
+      div {
+        text-align: center;
+      }
+      #photo {
+        margin-top: 5vh;
+        width: 50vh;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 5%;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 44%);
+        max-width: 90%;
+      }
+      h1 {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 5vw;
+        font-weight: bolder;
+        color: gold;
+      }
+      menu {
+        display: flex;
+        float: right;
+      }
+      a {
+        cursor: pointer;
+        margin: 5px;
+        padding: 6px;
+        border: 1px whitesmoke solid;
+        border-radius: 7px;
+        color: aliceblue;
+        background-color: rgb(103, 103, 246);
+        text-decoration: none;
+      }
+      #login:hover {
+        background: blue;
+      }
+      .signin {
+        background-color: whitesmoke;
+        color: black;
+        border: solid grey 1px;
+      }
+      #omg{
+        width: 30px;
+        background-color: rgba(253, 251, 251, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow:  0px 1px 8px 0 rgb(253, 251, 251);
+        
+      }
+      
+    </style>
+  </head>
+  <body id="container">
+    <menu>
+      <a href="./page.html" class="signin">Signin</a>
+      <a href="./page.html" id="login">Login</a>
+    </menu>
+
+    <menu style="float: left">
+      <img onclick="themes()" id="omg" alt="photo" src="theme.png" />
+    </menu>
+    <div>
+      <img id="photo" src="homepicture.jpg" alt="My image" />
+      <h1>MY Golden Days</h1>
+    </div>
+  </body>
+  <script>
+    theme = true;
+    function themes() {
+      if (theme) {
+        document.getElementById("container").style = "background-color:black";
+        
+
+        theme = false;
+      } else {
+        document.getElementById("container").style = "background-color:none";
+
+        theme = true;
+      }
+    }
+  </script>
+</html>
