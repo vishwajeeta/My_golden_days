@@ -12,13 +12,17 @@
       font-family: "Times New Roman", Times, serif;
       line-height: 5vh;
       color: gray;
+      margin: 10px;
+      border-radius: 7px;
     }
-    img {
-      width: 25%;
-      float: left;
-      margin: 15px;
-      border-radius: 5%;
+    .image,img {
+    
+      width: 20%;
+      border-radius: 15px;
       margin-right: 40px;
+      background-color: aliceblue;
+      border: black solid 1px;
+      padding: 20px;
     }
     h1 {
       text-align: center;
@@ -31,15 +35,33 @@
     a {
       text-decoration: none;
     }
+    fieldset{
+      display: flex;
+      flex-direction: column;
+    }
+    .submit{
+      cursor: pointer;
+      font-size: larger;
+      float: right;
+      border-radius: 7px;
+      border-color: aliceblue;
+    }
+    .submit:hover{
+      background-color: #4a4de7;
+      color: white;
+    }
   </style>
   <body>
-    <img src="homepicture.jpg" alt="My photo" />
-
-    <li>10/11/2023</li>
+    <!-- <img src="homepicture.jpg" alt="My photo" /> -->
+    
     <form action="">
       <fieldset>
         <legend><h1>Top day on My life</h1></legend>
+        <input type="file" class="image"> 
         <textarea name="" id="" cols="30" rows="10"> </textarea>
+        <div>
+        <input type="submit" class="submit">
+      </div>
       </fieldset>
     </form>
 
@@ -47,5 +69,6 @@
 
     <a href="" style="float: right">Right >></a>
     <div style="text-align: center"><a href="./index.html">Home</a></div>
+
   </body>
 </html>
